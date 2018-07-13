@@ -1,7 +1,7 @@
 {
   "name": "@web-component/markdown-renderer",
-  "version": "0.0.1",
-  "description": "A web-component for easy Material Icon usage.",
+  "version": "0.0.2",
+  "description": "A web-component to render markdown to html.",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",

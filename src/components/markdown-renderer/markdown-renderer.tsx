@@ -13,7 +13,11 @@ export class MarkdownRenderer {
 
   componentWillLoad() {
     const markdown = new MarkdownIt();
-    this.host.innerHTML = markdown.render(stripIndent(this.host.innerHTML))
+
+    this.host.innerHTML = markdown.render(stripIndent(this.host.innerHTML), {
+      html: true,
+      breaks: true
+    })
   }
   render() {
     return (
