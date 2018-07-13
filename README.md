@@ -1,23 +1,28 @@
-# `<material-icon>`
+# `<markdown-renderer>`
 
-A web-component for easy Material Icon usage.
-
-_Find icon names [here](https://material.io/tools/icons)._
+A web-component to render markdown to html.
 
 ## Props
 | name | type | default | required |
 |---|---|---|---|
-| name  | `string` | `✖` | yes
-| size  | `string` | `"sm"` | no
+| children  | Text Node | `✖` | yes
 
 # Usage
 
-Add the Material Icons font and `material-icon` to your index.html.
+Add `markdown-renderer` to your index.html.
 
 ```html
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src='https://unpkg.com/@web-component/markdown-renderer@0.0.1/dist/markdown-renderer.js'></script>
 ```
 
+Use `markdown-renderer` in your project:
+
 ```html
-<script src='https://unpkg.com/@web-component/material-icon@0.0.1/dist/material-icon.js'></script>
+<markdown-renderer>
+  # Wassap Mang?
+
+  _I woke up in a new Bugatti._
+
+  [Here](https://google.com) is a link.
+</markdown-renderer>
 ```
